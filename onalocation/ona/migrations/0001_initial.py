@@ -46,13 +46,13 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='location',
             name='location_type',
-            field=models.ForeignKey(to='location.LocationType'),
+            field=models.ForeignKey(to='ona.LocationType'),
         ),
         migrations.AddField(
             model_name='location',
             name='parent',
             field=mptt.fields.TreeForeignKey(
-                related_name='children', blank=True, to='location.Location',
+                related_name='children', blank=True, to='ona.Location',
                 null=True),
         ),
     ]

@@ -39,7 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'rest_framework',
     'mptt',
-    'location',
+    'ona',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -70,6 +70,14 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 WSGI_APPLICATION = 'onalocation.wsgi.application'
 
