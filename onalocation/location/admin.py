@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from mptt.admin import MPTTModelAdmin
+from .models import Location, LocationType
+
+admin.site.register(Location, MPTTModelAdmin)
+admin.site.register(LocationType)
