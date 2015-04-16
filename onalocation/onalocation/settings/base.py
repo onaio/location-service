@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'rest_framework',
     'mptt',
     'ona',
+    'api',
 )
 
 MIDDLEWARE_CLASSES = (
