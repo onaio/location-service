@@ -6,7 +6,7 @@ dashboards and other services through APIs
 # Setup
 
 - `pip install -r requirements.txt`
-- create dev database user `createuser onadev --interactive
+- create dev database user `createuser onadev --interactive`
 - Create a local_settings file in the onalocation/settings with the following:
 ```python
     from .base import *  # noqa
