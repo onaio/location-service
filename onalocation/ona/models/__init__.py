@@ -1,2 +1,2 @@
-from .location import Location  # noqa
-from .location import LocationType  # noqa
+from ona.models.location import Location  # noqa
+from ona.models.location import LocationType  # noqa
